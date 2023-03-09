@@ -89,7 +89,7 @@ export default function LotteryEntrance() {
 
     return (
         <div className="p-5">
-            <h1 className="py-4 px-4 font-bold text-4xl ">Lottery</h1>
+            <h1 className="py-4 px-0 font-bold text-4xl ">Lottery</h1>
             {raffleAddress ? (
                 <>
                     <button
@@ -105,9 +105,9 @@ export default function LotteryEntrance() {
                         disabled={isLoading || isFetching}
                     >
                         {isLoading || isFetching ? (
-                            <div className="animate-spin spinner-border h-10 w-10 border-b-3 rounded-full "></div>
+                            <div className=" animate-spin spinner-border h-8 w-8 border-b-2 rounded-full"></div>
                         ) : (
-                            "Enter Raffle"
+                            <div>Enter Raffle</div>
                         )}
                     </button>
                     <div>
